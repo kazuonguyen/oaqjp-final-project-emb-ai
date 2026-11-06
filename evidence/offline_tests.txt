@@ -1,0 +1,33 @@
+Captured: 2026-11-06T03:07:11.724849+00:00
+$ /Users/hungnq/Documents/Codex/2026-11-06/final-project-submission-and-evaluation-latest-4/work/venv/bin/python -m unittest tests.test_offline -v
+/Users/hungnq/Documents/Codex/2026-11-06/final-project-submission-and-evaluation-latest-4/work/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+test_each_score_can_be_dominant (tests.test_offline.TestDetectorOffline)
+Choose the largest score regardless of the emotion's position. ... ok
+test_empty_input_skips_network (tests.test_offline.TestDetectorOffline)
+Reject empty, whitespace, missing, and non-string input locally. ... ok
+test_request_and_output (tests.test_offline.TestDetectorOffline)
+Use the specified endpoint, model header, payload, and score keys. ... ok
+test_server_error_is_not_invalid_text (tests.test_offline.TestDetectorOffline)
+Preserve upstream HTTP failures as service errors. ... ok
+test_status_400_returns_none (tests.test_offline.TestDetectorOffline)
+Map an actual HTTP 400 status to all six None values. ... ok
+test_timeout_propagates (tests.test_offline.TestDetectorOffline)
+Allow the web server to distinguish a timeout from invalid input. ... ok
+test_blank_and_missing_input (tests.test_offline.TestFlaskOffline)
+Display the specified message for missing and whitespace input. ... ok
+test_formatted_response (tests.test_offline.TestFlaskOffline)
+Include each score and the dominant emotion in the UI response. ... ok
+test_home_page (tests.test_offline.TestFlaskOffline)
+Serve the original form and JavaScript. ... ok
+test_service_failure (tests.test_offline.TestFlaskOffline)
+Show a readable retry message if Watson cannot be reached. ... ok
+test_upstream_invalid_input (tests.test_offline.TestFlaskOffline)
+Handle the None result produced by an upstream status 400. ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.011s
+
+OK
+
+Exit status: 0
