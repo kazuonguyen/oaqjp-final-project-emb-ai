@@ -1,0 +1,5 @@
+Captured: 2026-11-06T03:12:26.448938+00:00
+$ /usr/bin/python3 -c from emotion_detection import emotion_detector; result = emotion_detector("I am so happy I am doing this"); print(result); assert result["dominant_emotion"] == "joy"
+{'anger': 0.0043079085, 'disgust': 0.00041127237, 'fear': 0.0037504788, 'joy': 0.9918804, 'sadness': 0.014091322, 'dominant_emotion': 'joy'}
+
+Exit status: 0

@@ -1,0 +1,5 @@
+Captured: 2026-11-06T03:12:26.794211+00:00
+$ /usr/bin/python3 -c from EmotionDetection.emotion_detection import emotion_detector; result = emotion_detector("I hate working long hours"); print(result); assert result["dominant_emotion"] == "anger"
+{'anger': 0.64949876, 'disgust': 0.03718168, 'fear': 0.05612277, 'joy': 0.00862553, 'sadness': 0.1955148, 'dominant_emotion': 'anger'}
+
+Exit status: 0

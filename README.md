@@ -17,7 +17,7 @@ and Pylint, but cannot complete the real Watson inference checks.
 ```bash
 python3 -m pip install -r requirements.txt
 python3 tools/collect_evidence.py --live
-python3 server.py
+python3 -m flask --app server run --host=0.0.0.0 --port=5000
 ```
 
 Launch the application on port 5000 from the Skills Network toolbox.
@@ -45,6 +45,16 @@ Invalid or blank text returns six `None` values. A Watson HTTP 400 response
 also returns six `None` values. Flask displays `Invalid text! Please try again!`
 when `dominant_emotion` is `None`. Network and upstream HTTP failures display
 a separate service-unavailable message.
+
+## Verified results (6 November 2026)
+
+- Live Watson imports and required format/package checks passed in Theia.
+- All five required live Watson tests passed.
+- All 11 offline logic/Flask regression tests passed.
+- `pylint server.py` scored **10.00/10** inside Theia.
+- Both required deployment/error screenshots are in `evidence/`.
+
+See `SUBMISSION_ANSWERS.md` for all 16 prepared responses.
 
 ## Evidence
 

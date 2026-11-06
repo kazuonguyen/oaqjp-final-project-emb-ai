@@ -1,7 +1,5 @@
-Captured: 2026-11-06T03:07:11.724849+00:00
-$ /Users/hungnq/Documents/Codex/2026-11-06/final-project-submission-and-evaluation-latest-4/work/venv/bin/python -m unittest tests.test_offline -v
-/Users/hungnq/Documents/Codex/2026-11-06/final-project-submission-and-evaluation-latest-4/work/venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
-  warnings.warn(
+Captured: 2026-11-06T03:12:18.231497+00:00
+$ /usr/bin/python3 -m unittest tests.test_offline -v
 test_each_score_can_be_dominant (tests.test_offline.TestDetectorOffline)
 Choose the largest score regardless of the emotion's position. ... ok
 test_empty_input_skips_network (tests.test_offline.TestDetectorOffline)
@@ -26,7 +24,7 @@ test_upstream_invalid_input (tests.test_offline.TestFlaskOffline)
 Handle the None result produced by an upstream status 400. ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 0.011s
+Ran 11 tests in 0.034s
 
 OK
 
